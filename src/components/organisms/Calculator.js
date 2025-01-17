@@ -1,11 +1,11 @@
 import React, { useState } from "react";
-import Row from "./Row";
-import CustomButton from "./atoms/Button/CustomButton";
-import "../App.css";
+import Row from "../molecules/Row";
+import CustomButton from "../atoms/Button/CustomButton";
+import "../../App.css";
 
 const Calculator = () => {
   const [rows, setRows] = useState([
-    { id: 1, sign: "+", value: 0, enabled: true },
+    { id: Date.now(), sign: "+", value: 0, enabled: true },
   ]);
 
   const handleAddRow = () => {
