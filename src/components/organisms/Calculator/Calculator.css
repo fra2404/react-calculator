@@ -1,0 +1,31 @@
+.calculator {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    max-height: 75vh;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    position: relative;
+}
+
+.sticky-footer {
+    position: sticky;
+    bottom: 0;
+    background-color: #fff;
+    padding: 10px 0;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.result {
+    font-size: 1.5em;
+    color: #333;
+}
+
+.add-button {
+    margin-top: 10px;
+}

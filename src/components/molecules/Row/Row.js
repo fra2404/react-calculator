@@ -1,8 +1,9 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { FaTimes } from "react-icons/fa";
-import CustomInput from "../atoms/Input/CustomInput";
-import ToggleSwitch from "../atoms/ToggleSwitch/ToggleSwitch";
+import CustomInput from "../../atoms/Input/CustomInput";
+import ToggleSwitch from "../../atoms/ToggleSwitch/ToggleSwitch";
+import "./Row.css";
 
 const Row = ({ id, sign, value, enabled, onToggle, onChange, onRemove }) => (
   <div className="row">

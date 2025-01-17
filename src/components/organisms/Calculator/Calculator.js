@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import Row from "../molecules/Row";
-import CustomButton from "../atoms/Button/CustomButton";
-import "../../App.css";
+import Row from "../../molecules/Row/Row";
+import CustomButton from "../../atoms/Button/CustomButton";
+import "./Calculator.css";
 
 const Calculator = () => {
   const [rows, setRows] = useState([
