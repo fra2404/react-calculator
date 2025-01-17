@@ -5,13 +5,19 @@ import "./CustomInput.css";
 const CustomInput = ({ type, value, onChange, options }) => {
   if (type === "select") {
     return (
-      <select className="custom-input" value={value} onChange={onChange}>
-        {options.map((option) => (
-          <option key={option.value} value={option.value}>
-            {option.label}
-          </option>
-        ))}
-      </select>
+      <div className="custom-select-wrapper">
+        <select
+          className="custom-input custom-input-select"
+          value={value}
+          onChange={onChange}
+        >
+          {options.map((option) => (
+            <option key={option.value} value={option.value}>
+              {option.label}
+            </option>
+          ))}
+        </select>
+      </div>
     );
   }
 
@@ -24,6 +30,7 @@ const CustomInput = ({ type, value, onChange, options }) => {
     />
   );
 };
+
 CustomInput.propTypes = {
   type: PropTypes.string.isRequired,
   value: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
