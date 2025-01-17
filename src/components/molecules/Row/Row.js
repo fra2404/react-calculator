@@ -6,7 +6,7 @@ import ToggleSwitch from "../../atoms/ToggleSwitch/ToggleSwitch";
 import "./Row.css";
 
 const Row = ({ id, sign, value, enabled, onToggle, onChange, onRemove }) => (
-  <div className="row">
+  <div className={`row ${!enabled ? "disabled" : ""}`}>
     <CustomInput
       type="select"
       value={sign}
@@ -38,6 +38,7 @@ const Row = ({ id, sign, value, enabled, onToggle, onChange, onRemove }) => (
     </button>
   </div>
 );
+
 Row.propTypes = {
   id: PropTypes.string.isRequired,
   sign: PropTypes.string.isRequired,

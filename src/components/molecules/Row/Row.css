@@ -18,3 +18,8 @@
     margin: 0 5px;
     font-size: 20px;
 }
+
+.row.disabled .custom-input {
+    background-color: #f0f0f0;
+    color: #a0a0a0;
+}
